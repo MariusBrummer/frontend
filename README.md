@@ -25,7 +25,7 @@ Before you begin, ensure you have met the following requirements:
    npm install
     
 ## Project structure
-
+```
 frontend/
 │
 ├── cypress/
@@ -38,7 +38,7 @@ frontend/
 ├── package.json           # Project dependencies and scripts
 └── README.md              # Project documentation
 
-
+```
 ## Page Objects
 
 In the cypress/pageObjects directory, you will find classes that represent different pages of the application. Each class contains methods for interacting with the elements on that page.
