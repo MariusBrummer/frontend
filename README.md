@@ -73,8 +73,7 @@ export default HomePage;
 To run your tests, execute one the following commands in your terminal:
 
 ```bash
-npx cypress open
-npx cypress run --browser chrome --headless
+npm run test
 
 ```
 

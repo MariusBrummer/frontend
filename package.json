@@ -11,8 +11,12 @@
     "mochawesome-report-generator": "^6.2.0"
   },
   "scripts": {
-    "combine-reports": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mochareports/report.json",
-    "generate-report": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports --inline",
-    "posttest": "npm run combine-reports && npm run generate-report"
+    "clean:reports": "(if exist cypress\\reports (rmdir /Q /S cypress\\reports)) && mkdir cypress\\reports && mkdir cypress\\reports\\mocha && mkdir cypress\\reports\\mochareports",
+    "pretest": "npm run clean:reports",
+    "scripts": "cypress run --spec 'cypress/e2e/test.cy.js' --browser chrome --headless",
+    "move-report": "node moveReport.js",
+    "generate-report": "marge cypress/reports/mocha/report.json -f report -o cypress/reports/mochareports",
+    "posttest": "npm run move-report && npm run generate-report",
+    "test": "npm run clean:reports && npm run scripts && npm run posttest"
   }
 }
