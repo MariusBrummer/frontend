@@ -3,6 +3,14 @@ class HomePage {
         cy.visit('https://www.eneco.nl/'); // Change to your actual homepage URL
     }
 
+    checkTitle(expectedTitle) {
+        cy.title().should('eq', expectedTitle); // Asserts that the title equals the expected value
+    }
+
+    checkIfBerekenButtonExist(){
+        cy.get('.sparky-button > .d0i1vy0').should('exist');
+    }
+
     clickWeigerenButton() {
         cy.get('[data-label="Weigeren"]').click();
     }

@@ -4,15 +4,12 @@ class EnergieKeuzePage {
         
     }
     clickStroomEnGasButton(){
-        cy.wait(3000);
         cy.get('button[value="electricityAndGas"]').click(); 
     }
     clickVolgendeButton(){
         cy.get('[data-label="Volgende"]').click();
     }
-    checkHeadingExist(){
-        cy.contains('Weet je het energieverbruik?').should('exist');
-    }
+ 
 
 }
 
