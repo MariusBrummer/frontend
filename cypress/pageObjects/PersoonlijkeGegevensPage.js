@@ -1,7 +1,9 @@
-class PersoonlijkeGegevensPage{
-    verifyPageIsDisplayed() {
-        cy.url().should('include', 'persoonlijke-gegevens');
+import { verifyPageIsDisplayed } from '../support/utils';
 
+class PersoonlijkeGegevensPage{
+    
+    verifyPageIsDisplayed(){
+        verifyPageIsDisplayed('persoonlijke-gegevens'); 
     }
 
     checkHeadingExist(){

@@ -1,7 +1,8 @@
-class ContactGegevensPage{
-    verifyPageIsDisplayed() {
-        cy.url().should('include', 'contactgegevens');
+import { verifyPageIsDisplayed } from '../support/utils';
 
+class ContactGegevensPage{
+    verifyPageIsDisplayed(){
+        verifyPageIsDisplayed('contactgegevens'); 
     }
 
     checkHeadingExist(){

@@ -1,10 +1,16 @@
+import { verifyPageIsDisplayed } from '../support/utils';
+
 class HomePage {
     visit() {
-        cy.visit('https://www.eneco.nl/'); // Change to your actual homepage URL
+        cy.visit('https://www.eneco.nl/'); 
+    }
+
+    verifyPageIsDisplayed(){
+        verifyPageIsDisplayed('eneco'); 
     }
 
     checkTitle(expectedTitle) {
-        cy.title().should('eq', expectedTitle); // Asserts that the title equals the expected value
+        cy.title().should('eq', expectedTitle); 
     }
 
     checkIfBerekenButtonExist(){
@@ -25,10 +31,6 @@ class HomePage {
         cy.wait(1000); // Adjust selector as needed
     }
 
-    // clickBerekenButton() {
-    //     cy.contains('Bereken je maandbedrag').dblclick(); // Adjust selector as needed
-        
-    // }
 
     clickBerekenButton() {
         cy.get('.sparky-button > .d0i1vy0').click(); // Adjust selector as needed

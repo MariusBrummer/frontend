@@ -1,7 +1,9 @@
-class StartLeverDatumPage {
-    verifyPageIsDisplayed() {
-        cy.url().should('include', 'je-gegevens');
+import { verifyPageIsDisplayed } from '../support/utils';
 
+class StartLeverDatumPage {
+    
+    verifyPageIsDisplayed(){
+        verifyPageIsDisplayed('je-gegevens'); 
     }
 
     checkHeadingExist(){

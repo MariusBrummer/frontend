@@ -1,8 +1,11 @@
+import { verifyPageIsDisplayed } from '../support/utils';
+
 class EnergieKeuzePage {
-    verifyPageIsDisplayed() {
-        cy.url().should('include', '/energiekeuze'); // Adjust according to the actual URL
-        
+
+    verifyPageIsDisplayed(){
+        verifyPageIsDisplayed('eneradsfasdgiekeuze'); 
     }
+
     clickStroomEnGasButton(){
         cy.get('button[value="electricityAndGas"]').click(); 
     }

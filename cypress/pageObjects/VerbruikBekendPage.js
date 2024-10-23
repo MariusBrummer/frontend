@@ -1,7 +1,9 @@
-class VerbruikBekendPage {
-    verifyPageIsDisplayed() {
-        cy.url().should('include', '/verbruik-bekend');
+import { verifyPageIsDisplayed } from '../support/utils';
 
+class VerbruikBekendPage {
+    
+    verifyPageIsDisplayed(){
+        verifyPageIsDisplayed('verbruik-bekend'); 
     }
     checkHeadingExist(){
         cy.contains('Weet je het energieverbruik?').should('exist');

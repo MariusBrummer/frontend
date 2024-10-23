@@ -1,7 +1,9 @@
-class ZonnePanelenPage {
-    verifyPageIsDisplayed() {
-        cy.url().should('include', 'zonnepanelen');
+import { verifyPageIsDisplayed } from '../support/utils';
 
+class ZonnePanelenPage {
+    
+    verifyPageIsDisplayed(){
+        verifyPageIsDisplayed('zonnepanelen'); 
     }
 
     checkHeadingExist(){

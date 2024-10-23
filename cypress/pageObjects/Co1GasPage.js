@@ -1,7 +1,8 @@
-class Co2GasPage{
-    verifyPageIsDisplayed() {
-        cy.url().should('include', 'co2-gas');
+import { verifyPageIsDisplayed } from '../support/utils';
 
+class Co2GasPage{
+    verifyPageIsDisplayed(){
+        verifyPageIsDisplayed('co2-gas'); 
     }
 
     checkHeadingExist(){

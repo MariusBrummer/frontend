@@ -1,7 +1,9 @@
-class OverzichtPage{
-    verifyPageIsDisplayed() {
-        cy.url().should('include', 'overzicht');
+import { verifyPageIsDisplayed } from '../support/utils';
 
+class OverzichtPage{
+
+        verifyPageIsDisplayed(){
+        verifyPageIsDisplayed('overzicht'); 
     }
 
     checkHeadingExist(){

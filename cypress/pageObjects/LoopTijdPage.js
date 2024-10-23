@@ -1,6 +1,8 @@
+import { verifyPageIsDisplayed } from '../support/utils';
+
 class LoopTijdPage {
-    verifyPageIsDisplayed() {
-        cy.url().should('include', 'looptijd');
+    verifyPageIsDisplayed(){
+        verifyPageIsDisplayed('looptijd'); 
     }
 
     checkHeadingExist(){

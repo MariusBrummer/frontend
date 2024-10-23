@@ -1,7 +1,9 @@
-class VerhuizenPage{
-    verifyPageIsDisplayed() {
-        cy.url().should('include', 'verhuizen');
+import { verifyPageIsDisplayed } from '../support/utils';
 
+class VerhuizenPage{
+    
+    verifyPageIsDisplayed(){
+        verifyPageIsDisplayed('verhuizen'); 
     }
 
     checkHeadingExist(){

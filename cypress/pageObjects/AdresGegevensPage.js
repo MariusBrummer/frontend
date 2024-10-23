@@ -1,7 +1,8 @@
-class AdresGegevensPage{
-    verifyPageIsDisplayed() {
-        cy.url().should('include', 'adresgegevens');
+import { verifyPageIsDisplayed } from '../support/utils';
 
+class AdresGegevensPage{
+    verifyPageIsDisplayed(){
+        verifyPageIsDisplayed('adressgegevens'); 
     }
 
     checkHeadingExist(){
