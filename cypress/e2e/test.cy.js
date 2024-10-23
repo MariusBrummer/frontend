@@ -10,6 +10,7 @@ import OverzichtPage from '../pageObjects/OverzichtPage';
 import StartLeverDatumPage from '../pageObjects/StartLeverDatumPage';
 import AdresGegevensPage from '../pageObjects/AdresGegevensPage';
 import PersoonlijkeGegevensPage from '../pageObjects/PersoonlijkeGegevensPage';
+import ContactGegevensPage from '../pageObjects/ContactGegevensPage';
 
 const homePage = new HomePage();
 const energieKeuzePage = new EnergieKeuzePage();
@@ -23,6 +24,7 @@ const overzichtPage = new OverzichtPage();
 const startLeverDatumPage = new StartLeverDatumPage();
 const adresGegevensPage = new AdresGegevensPage();
 const persoonlijkeGegevensPage = new PersoonlijkeGegevensPage();
+const contactGegevensPage = new ContactGegevensPage();
 
 
 describe('Energie aanvragen on Eneco Website', () => {
@@ -73,6 +75,10 @@ describe('Energie aanvragen on Eneco Website', () => {
         adresGegevensPage.clickVolgendeButton();
         persoonlijkeGegevensPage.completePersonalDetailsForm();
         persoonlijkeGegevensPage.clickVolgendeButton();
+        contactGegevensPage.verifyPageIsDisplayed();
+        contactGegevensPage.checkHeadingExist();
+        contactGegevensPage.completeContactDetails();
+        contactGegevensPage.clickControlerenButton();
 
         
     });
