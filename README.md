@@ -29,14 +29,19 @@ Before you begin, ensure you have met the following requirements:
 frontend/
 │
 ├── cypress/
+|   ├── e2e/              # Test scripts
 │   ├── fixtures/         # Test data and mock responses
 │   ├── integration/      # Test specifications
 │   ├── pageObjects/      # Page object classes
+|   ├── plugins/          # Custom plugins 
+│   ├── reports/          # Test reports
 │   └── support/          # Custom commands and configurations
+│   └── videos/           # Video recording of test run
 │
 ├── cypress.config.js     # Cypress configuration file
-├── package.json           # Project dependencies and scripts
-└── README.md              # Project documentation
+├── install.bat           # Installation script for Windows
+├── package.json          # Project dependencies and scripts
+└── README.md             # Project documentation
 
 ```
 ## Page Objects

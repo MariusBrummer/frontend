@@ -13,7 +13,7 @@
   "scripts": {
     "clean:reports": "(if exist cypress\\reports (rmdir /Q /S cypress\\reports)) && mkdir cypress\\reports && mkdir cypress\\reports\\mocha && mkdir cypress\\reports\\mochareports",
     "pretest": "npm run clean:reports",
-    "scripts": "cypress run --spec 'cypress/e2e/test.cy.js' --browser chrome --headless",
+    "scripts": "cypress run --spec 'cypress/e2e/test.cy.js'",
     "move-report": "node moveReport.js",
     "generate-report": "marge cypress/reports/mocha/report.json -f report -o cypress/reports/mochareports",
     "posttest": "npm run move-report && npm run generate-report",

@@ -27,7 +27,7 @@ const persoonlijkeGegevensPage = new PersoonlijkeGegevensPage();
 const contactGegevensPage = new ContactGegevensPage();
 
 
-describe('Energie aanvragen on Eneco Website', () => {
+describe('Energie aanvragen op Eneco Website', () => {
     it('Request a energie quote using postal code', () => {
         homePage.visit();  
         homePage.clickWeigerenButton();
@@ -35,6 +35,7 @@ describe('Energie aanvragen on Eneco Website', () => {
         homePage.checkTitle('Energieleverancier Eneco - duurzame energie van iedereen');
         homePage.enterPostalCode('9713RD');
         homePage.enterHouseNumber('63');
+        homePage.checkAddress('Irislaan 63, 9713RD GRONINGEN');
         homePage.clickBerekenButton();
 
         energieKeuzePage.verifyPageIsDisplayed();

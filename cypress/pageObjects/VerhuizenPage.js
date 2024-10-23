@@ -15,7 +15,6 @@ class VerhuizenPage{
     }
 
     clickVolgendeButton(){
-        cy.wait(2000);
         cy.get('[data-label="Volgende"]').click();
 
     }

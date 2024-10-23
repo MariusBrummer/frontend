@@ -27,7 +27,11 @@ class HomePage {
 
     enterHouseNumber(houseNumber) {
         cy.get('input[name="houseNumber"]').type(houseNumber);
-        cy.wait(1000); 
+         
+    }
+
+    checkAddress(address){
+        cy.contains(address).should('exist');
     }
 
 
