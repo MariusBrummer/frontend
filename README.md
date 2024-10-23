@@ -79,4 +79,6 @@ npm run test
 
 ## Reporting
 
-After a test run an HTML report will be generated in the cypress/reports directory. The report includes information about the test results, and  screenshots if there are any failures.
+After a test run an HTML report will be generated in the cypress/reports/mochareports directory. The report includes information about the test results, and screenshots if there are any failures.
+
+A video recording of the test run will be saved in the cypress/videos directory.
