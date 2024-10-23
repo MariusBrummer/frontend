@@ -8,21 +8,24 @@ This project is a Cypress-based test automation framework that implements the Pa
 
 Before you begin, ensure you have met the following requirements:
 
-- [Node.js](https://nodejs.org/) installed (version 14 or above)
+- [Node.js](https://nodejs.org/) installed (version 18 or above)
 - [Cypress](https://www.cypress.io/) installed
 
 ## Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/MariusBrummer/frontend.git
    cd frontend
 
 2. Install the dependencies:
+
    ```bash
    npm install
 
 ## Project structure
+
 frontend/
 │
 ├── cypress/
@@ -36,12 +39,14 @@ frontend/
 └── README.md              # Project documentation
 
 ## Page Objects
+
 In the cypress/pageObjects directory, you will find classes that represent different pages of the application. Each class contains methods for interacting with the elements on that page.
 
 ## Example: HomePage
+```javascript
 class HomePage {
     visit() {
-        cy.visit('https://www.eneco.nl/');
+        cy.visit('<https://www.eneco.nl/>');
     }
 
     enterPostalCode(postalCode) {
@@ -58,13 +63,14 @@ class HomePage {
 }
 
 export default HomePage;
-
-
+```
 ## Running Test
+
 To run your tests, execute the following command in your terminal:
-    
-    ```bash
+
+```bash
 npx cypress open
+
 ```
 ## Writing Test
 
