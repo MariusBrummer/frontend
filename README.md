@@ -81,6 +81,13 @@ npm run test
 
 ```
 
+## Running Test in Cypress GUI
+
+```bash
+npx open cypress
+
+```
+
 ## Reporting
 
 After a test run an HTML report will be generated in the cypress/reports/mochareports directory. The report includes information about the test results, and screenshots if there are any failures.
