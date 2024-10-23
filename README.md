@@ -74,14 +74,16 @@ export default HomePage;
 
 ## Running Test
 
-To run your tests, execute one the following commands in your terminal:
+To run your tests, execute the following command in your terminal:
 
 ```bash
 npm run test
 
 ```
 
-## Running Test in Cypress GUI
+## Running Tests in Cypress GUI
+
+To run your tests in Cypress GUI execute the following command in your terminal:
 
 ```bash
 npx open cypress
