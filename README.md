@@ -19,13 +19,11 @@ Before you begin, ensure you have met the following requirements:
    git clone https://github.com/MariusBrummer/frontend.git
    cd frontend
 
-2. Run the installation script to install all dependencies on Windows:
+2. Run the installation script to install all dependencies on Windows. There are not installation scripts for Mac and Linux:
 
    ```bash
    npm install
-
-    Currently there are no instruction on Linux and Mac.
-  
+    
 ## Project structure
 
 frontend/
@@ -39,6 +37,7 @@ frontend/
 ├── cypress.config.js     # Cypress configuration file
 ├── package.json           # Project dependencies and scripts
 └── README.md              # Project documentation
+
 
 ## Page Objects
 
