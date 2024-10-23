@@ -3,7 +3,7 @@ import { verifyPageIsDisplayed } from '../support/utils';
 class EnergieKeuzePage {
 
     verifyPageIsDisplayed(){
-        verifyPageIsDisplayed('eneradsfasdgiekeuze'); 
+        verifyPageIsDisplayed('energiekeuze'); 
     }
 
     clickStroomEnGasButton(){

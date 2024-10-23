@@ -22,18 +22,17 @@ class HomePage {
     }
 
     enterPostalCode(postalCode) {
-        // Use the name attribute to select the input field
-        cy.get('input[name="postalCode"]').type(postalCode); // Adjust selector as needed
+        cy.get('input[name="postalCode"]').type(postalCode); 
     }
 
     enterHouseNumber(houseNumber) {
         cy.get('input[name="houseNumber"]').type(houseNumber);
-        cy.wait(1000); // Adjust selector as needed
+        cy.wait(1000); 
     }
 
 
     clickBerekenButton() {
-        cy.get('.sparky-button > .d0i1vy0').click(); // Adjust selector as needed
+        cy.get('.sparky-button > .d0i1vy0').click();
         
     }
 }

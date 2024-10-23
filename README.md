@@ -24,6 +24,18 @@ Before you begin, ensure you have met the following requirements:
    ```bash
    npm install
 
+   This command will install all the required packages listed in package.json, including:
+
+        @badeball/cypress-cucumber-preprocessor
+        @cucumber/cucumber
+        @cypress/webpack-preprocessor
+        cypress
+        cypress-mochawesome-reporter
+        marge
+        mochawesome
+        mochawesome-merge
+        mochawesome-report-generator
+
 ## Project structure
 
 frontend/
@@ -66,13 +78,10 @@ export default HomePage;
 ```
 ## Running Test
 
-To run your tests, execute the following command in your terminal:
+To run your tests, execute one the following commands in your terminal:
 
 ```bash
 npx cypress open
+npx cypress run --browser chrome --headless
 
 ```
-## Writing Test
-
-
-
