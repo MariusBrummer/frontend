@@ -19,23 +19,13 @@ Before you begin, ensure you have met the following requirements:
    git clone https://github.com/MariusBrummer/frontend.git
    cd frontend
 
-2. Install the dependencies:
+2. Run the installation script to install all dependencies on Windows:
 
    ```bash
    npm install
 
-   This command will install all the required packages listed in package.json, including:
-
-        @badeball/cypress-cucumber-preprocessor
-        @cucumber/cucumber
-        @cypress/webpack-preprocessor
-        cypress
-        cypress-mochawesome-reporter
-        marge
-        mochawesome
-        mochawesome-merge
-        mochawesome-report-generator
-
+    Currently there are no instruction on Linux and Mac.
+  
 ## Project structure
 
 frontend/
@@ -55,6 +45,7 @@ frontend/
 In the cypress/pageObjects directory, you will find classes that represent different pages of the application. Each class contains methods for interacting with the elements on that page.
 
 ## Example: HomePage
+
 ```javascript
 class HomePage {
     visit() {
@@ -76,6 +67,7 @@ class HomePage {
 
 export default HomePage;
 ```
+
 ## Running Test
 
 To run your tests, execute one the following commands in your terminal:
@@ -85,3 +77,7 @@ npx cypress open
 npx cypress run --browser chrome --headless
 
 ```
+
+## Reporting
+
+After a test run an HTML report will be generated in the cypress/reports directory. The report includes information about the test results, and  screenshots if there are any failures.
