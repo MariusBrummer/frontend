@@ -38,6 +38,8 @@ describe('Energie aanvragen op Eneco Website', () => {
         homePage.checkAddress('Irislaan 63, 9713RD GRONINGEN');
         homePage.clickBerekenButton();
 
+
+        //TODO:  Parameterize the test data of the tests below
         energieKeuzePage.verifyPageIsDisplayed();
         energieKeuzePage.clickStroomEnGasButton();
         energieKeuzePage.clickVolgendeButton();
