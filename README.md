@@ -16,10 +16,10 @@ Before you begin, ensure you have met the following requirements:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/MariusBrummer/frontend.git
-   cd frontend
+   git clone https://github.com/MariusBrummer/Front-end-playground
+   cd Front-end-playground
 
-2. Run the installation script to install all dependencies on Windows. There are not installation scripts for Mac and Linux:
+2. Run the installation script to install all dependencies on Windows. There are no installation scripts for Mac and Linux:
 
    ```bash
    npm install
