@@ -40,6 +40,7 @@ Front-end-playground/
 │   └── videos/           # Video recording of test run
 │
 ├── cypress.config.js     # Cypress configuration file
+├── moveReports.js        # Script to move reports to a new directory
 ├── install.bat           # Installation script for Windows
 ├── package.json          # Project dependencies and scripts
 └── README.md             # Project documentation
