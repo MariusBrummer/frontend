@@ -19,14 +19,15 @@ Before you begin, ensure you have met the following requirements:
    git clone https://github.com/MariusBrummer/Front-end-playground
    cd Front-end-playground
 
-2. Run the installation script to install all dependencies on Windows. There are no installation scripts for Mac and Linux:
+2. Run this command in Powershell to install all dependencies on Windows.
 
    ```bash
-   npm install
-    
+   npm .\install.bat
+
 ## Project structure
-```
-frontend/
+
+```text
+Front-end-playground/
 │
 ├── cypress/
 |   ├── e2e/              # Test scripts
@@ -44,6 +45,7 @@ frontend/
 └── README.md             # Project documentation
 
 ```
+
 ## Page Objects
 
 In the cypress/pageObjects directory, you will find classes that represent different pages of the application. Each class contains methods for interacting with the elements on that page.
@@ -86,7 +88,13 @@ npm run test
 To run your tests in Cypress GUI execute the following command in your terminal:
 
 ```bash
-npx open cypress
+npx cypress open
+
+Select E2E testing.
+Select any browser to run the tests.
+Click on "Start E2E Testing" button
+Click on the "test.cy.jy" spec file to run the tests.
+
 
 ```
 
