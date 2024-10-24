@@ -1,4 +1,4 @@
-# Cypress Page Object Model Project
+# Front-end Playground
 
 ## Overview
 
